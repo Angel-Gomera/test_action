@@ -1,1 +1,23 @@
 name: Prueba Unitaria
+
+on:
+    push:
+        branches: 
+            - master
+
+    pull_request:
+        branches:
+            - master
+
+
+steps:
+    Test:
+        name: My test
+        runs-on: ubuntu-latest
+
+    
+        name: prueba
+        run: echo "Hola Darli"
+        
+
+    
