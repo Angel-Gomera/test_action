@@ -22,5 +22,19 @@ jobs:
       - name: Mariela CD
         run: echo " Hola Dayelin "
 
+  Test2:
+    name: My New Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup Python
+        uses: actions/setup-python@v5.6.0
+        with:
+          python-version: '3.11'
+
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+
+
 
     
