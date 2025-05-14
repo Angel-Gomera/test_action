@@ -1,23 +1,26 @@
 name: Prueba Unitaria
 
 on:
-    push:
-        branches: 
-            - master
+  push:
+    branches: 
+      - master
 
-    pull_request:
-        branches:
-            - master
+  pull_request:
+    branches:
+      - master
 
 
-steps:
-    Test:
-        name: My test
-        runs-on: ubuntu-latest
+jobs:
+  Test:
+    name: My test
+    runs-on: ubuntu-latest
 
-    
-        name: prueba
-        run: echo "Hola Darli"
-        
+    steps:
+      - name: Gomera CI
+        run: echo " Hola Darli "
+
+      - name: Mariela CD
+        run: echo " Hola Dayelin "
+
 
     
