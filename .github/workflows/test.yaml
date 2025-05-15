@@ -29,6 +29,7 @@ jobs:
 
   Testing_CD:
     name: Despliegue Continue
+    needs: Testing_CI
     runs-on: ubuntu-latest
 
     steps:
