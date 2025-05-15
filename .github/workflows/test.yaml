@@ -24,6 +24,9 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Version Python
+        run: python --version
+
   Testing_CD:
     name: Despliegue Continue
     runs-on: ubuntu-latest
