@@ -1,8 +1,8 @@
-name: Prueba Unitaria
+name: Prueba Unitaria (Test)
 
 on:
   push:
-    branches: 
+    branches:
       - master
 
   pull_request:
@@ -11,30 +11,30 @@ on:
 
 
 jobs:
-  Test:
-    name: My test
+  Testing CI:
+    name: Integracion Continua
     runs-on: ubuntu-latest
 
     steps:
-      - name: Gomera CI
-        run: echo " Hola Darli "
+      - name: clonar repo
+        uses: actions/checkout@v4.2.2
 
-      - name: Mariela CD
-        run: echo " Hola Dayelin "
-
-  Test2:
-    name: My New Test
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Setup Python
+      - name: Install python
         uses: actions/setup-python@v5.6.0
         with:
           python-version: '3.11'
 
-      - name: Checkout
-        uses: actions/checkout@v4.2.2
+  Testing CD:
+    name: Despliegue Continue
+    runs-on: ubuntu-latest
 
+    steps:
+      - name: Gomera CD
+        run: echo " Despliegue continue con Gomera Romero "
+
+      - name: Darli CD
+        run: echo " Despliegue continue con Darli Diaz "
+      
 
 
     
