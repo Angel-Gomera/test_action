@@ -39,6 +39,9 @@ jobs:
       - name: Darli CD
         run: echo " Despliegue continue con Darli Diaz "
 
+      - name: clonar repo
+        uses: actions/checkout@v4.2.2
+      
       - name: ls
         uses: ./.github/actions/my_action
               
