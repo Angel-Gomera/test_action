@@ -16,6 +16,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: clonar repo
+        uses: actions/checkout@v4.2.2
+        
       - name: Install python
         uses: actions/setup-python@v5.6.0
         with:
@@ -36,11 +39,8 @@ jobs:
       - name: Darli CD
         run: echo " Despliegue continue con Darli Diaz "
 
-      - name: clonar repo
-        uses: actions/checkout@v4.2.2
-      
       - name: ls
-        uses: ./.github/action/my_action
+        uses: ./.github/actions/my_action
               
 
 
