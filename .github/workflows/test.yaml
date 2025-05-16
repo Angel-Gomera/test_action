@@ -101,7 +101,15 @@ jobs:
         run: echo "${{ vars.my_variable_remota }}"
 
 
-        
+  Secrets_value:
+    name: Variable que guarda informacion sensible
+    needs: variables_remotas
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Variables secretas
+        run: echo " {{ secrets.MY_SECRETS }} "
+
 
         
 
