@@ -69,6 +69,7 @@ jobs:
           
   variables_entorno:
     name: Variables de entorno
+    needs: Test_personalizado
     runs-on: ubuntu-latest
 
     env:
@@ -76,7 +77,20 @@ jobs:
     
     steps:
       - name: variables
-        run: echo "$var"
+        run: echo " $var "
+
+  
+  variables_entorno_2:
+    name: Metodo 2 para usar variables de entorno
+    needs: variables_entorno
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Variables de entorno 2
+        env: 
+          my_var: Sin Dormir, pero estudiando y aprendiendo lo que me gusta (Desarrollo de Software).
+        run: echo " $my_var "
+        
 
 
     
