@@ -4,7 +4,9 @@ description: " Este es un test personalizado con inputs and runs "
 
 runs:
   using: "Composite"
+  
 
   steps:
     - name: Saludar
       run: echo "Hola Gomera" 
+      shell: bash
