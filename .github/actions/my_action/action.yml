@@ -10,7 +10,7 @@ inputs:
 
   dev:
     description: " Introducir todo lo que deseas para ser visto desde el lado del cliente "
-    required: true
+    required: false
     default: " Desarrollador Python "
 
 runs:

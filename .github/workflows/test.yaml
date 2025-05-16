@@ -46,7 +46,7 @@ jobs:
         uses: ./.github/actions/my_action
         with:
           testing: " Amo la Programacion como nadie mas lo ha hecho. "
-          dev: " Amo EL Lenguaje de Programacion Python "
+          
               
 
 
