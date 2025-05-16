@@ -2,11 +2,16 @@ name: "Test personalizado"
 
 description: " Este es un test personalizado con inputs and runs "
 
+inputs:
+  Testing:
+    description: " Introducir todo lo que deseas para ser visto desde el lado del cliente "
+    required: true
+    default: " CD / CI "
+
 runs:
   using: "Composite"
-  
 
   steps:
     - name: Saludar
-      run: echo "Hola Gomera" 
+      run: echo "${{ inputs.Testing }}" 
       shell: bash
