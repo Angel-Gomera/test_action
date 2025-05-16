@@ -6,5 +6,5 @@ runs:
   using: "Composite"
 
   steps:
-    - name: "Saludar"
+    - name: Saludar
       run: echo "Hola Gomera" 
