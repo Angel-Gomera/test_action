@@ -38,6 +38,9 @@ jobs:
 
       - name: Darli CD
         run: echo " Despliegue continue con Darli Diaz "
+
+      - name: ls -la
+        run: ./.github/Action
       
 
 
