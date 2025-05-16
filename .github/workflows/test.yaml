@@ -90,6 +90,16 @@ jobs:
         env: 
           my_var: Sin Dormir, pero estudiando y aprendiendo lo que me gusta (Desarrollo de Software).
         run: echo " $my_var "
+
+  variables_remotas:
+    name: variables de repositorios remotos
+    needs: variables_entorno_2
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repositorio Remoto
+        run: echo "${{ vars.my_variable_remota }}"
+
         
 
 
