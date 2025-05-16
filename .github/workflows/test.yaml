@@ -108,7 +108,7 @@ jobs:
 
     steps:
       - name: Variables secretas
-        run: echo " {{ secrets.MY_SECRETS }} "
+        run: echo " ${{ secrets.MY_SECRETS }} "
 
 
         
