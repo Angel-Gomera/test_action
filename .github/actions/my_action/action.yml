@@ -22,4 +22,4 @@ runs:
         echo " ${{ inputs.testing }} " 
         echo " ${{ inputs.dev }} "
 
-      
+      shell: bash
