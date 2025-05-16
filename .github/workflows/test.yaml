@@ -16,9 +16,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: clonar repo
-        uses: actions/checkout@v4.2.2
-        
       - name: Install python
         uses: actions/setup-python@v5.6.0
         with:
