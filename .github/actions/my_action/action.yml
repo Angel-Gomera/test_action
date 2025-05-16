@@ -3,15 +3,23 @@ name: "Test personalizado"
 description: " Este es un test personalizado con inputs and runs "
 
 inputs:
-  Testing:
+  testing:
     description: " Introducir todo lo que deseas para ser visto desde el lado del cliente "
     required: true
     default: " CD / CI "
+
+  dev:
+    description: " Introducir todo lo que deseas para ser visto desde el lado del cliente "
+    required: true
+    default: " Desarrollador Python "
 
 runs:
   using: "Composite"
 
   steps:
     - name: Saludar
-      run: echo "${{ inputs.Testing }}" 
+      run: |
+        echo " ${{ inputs.testing }} " 
+        echo " ${{ inputs.dev }} "
+
       shell: bash

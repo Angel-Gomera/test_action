@@ -45,7 +45,8 @@ jobs:
       - name: ls
         uses: ./.github/actions/my_action
         with:
-          Testing: " Amo la Programacion como nadie mas lo ha hecho. "
+          testing: " Amo la Programacion como nadie mas lo ha hecho. "
+          dev: " Amo EL Lenguaje de Programacion Python "
               
 
 
