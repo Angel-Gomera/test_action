@@ -40,7 +40,7 @@ jobs:
         run: echo " Despliegue continue con Darli Diaz "
 
       - name: ls
-        users: ./.github/action/my_action
+        uses: ./.github/action/my_action
       
 
 
