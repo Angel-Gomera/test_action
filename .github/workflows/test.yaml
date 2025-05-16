@@ -19,6 +19,9 @@ jobs:
       mysql:
         image: mylql:5.7
 
+        env:
+          MYSQL_ROOT_PASSWORD: example
+
         ports:
           - 3606:3606
 
