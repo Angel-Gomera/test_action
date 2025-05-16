@@ -72,7 +72,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      var: "Quiero ser un Desarrollador Full Stack"
+      var: Quiero ser un Desarrollador Full Stack
     
     steps:
       - name: variables
