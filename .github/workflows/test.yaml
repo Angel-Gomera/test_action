@@ -23,6 +23,11 @@ jobs:
         ports:
           - 3606:3606
 
+      redis:
+        image: redis
+        ports:
+          - 6379:6379
+
     steps:
       - name: clonar repo
         uses: actions/checkout@v4.2.2
