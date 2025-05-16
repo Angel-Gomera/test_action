@@ -67,7 +67,16 @@ jobs:
           testing: " Amo la Programacion como nadie mas lo ha hecho. "
           dev: " Amo EL Lenguaje de Programacion Python "
           
-              
+  variables_entorno:
+    name: Variables de entorno
+    runs-on: ubuntu-latest
+
+    env:
+      var: "Quiero ser un Desarrollador Full Stack"
+    
+    steps:
+      - name: variables
+        run: echo "$var"
 
 
     
